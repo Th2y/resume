@@ -1,0 +1,257 @@
+{
+  "personal": {
+    "name": "Thayane Carvalho dos Santos",
+    "title": "Desenvolvedora Front-End (Angular Developer)",
+    "location": "Aracaju, Sergipe, Brasil",
+    "contacts": {
+      "phone": "+55 (79) 9 8119-0742",
+      "email": "thayanecarvalho3@gmail.com",
+      "linkedin": "linkedin.com/in/thayane-carvalho-developer/",
+      "github": "github.com/Th2y"
+    },
+    "objective": "Atuar como Desenvolvedor Front-End Angular, aplicando boas práticas de arquitetura, performance e UX para criar interfaces escaláveis e responsivas, entregando soluções eficientes e código limpo."
+  },
+  "summary": "Desenvolvedor Front-End com mais de 3 anos de experiência em Angular, HTML, CSS, TypeScript e JavaScript, especializado em interfaces performáticas e componentização. Experiência em Angular Material, Tailwind, Firebase e PostgreSQL, aplicando RxJS e lazy loading para otimização. Iniciei como FullStack (Java + Angular + PostgreSQL), o que fortaleceu minha visão completa do ciclo de desenvolvimento.",
+  "experience": [
+    {
+      "title": "Desenvolvedora Angular Pleno e Unity",
+      "company": "Horse Power Studio",
+      "period": "05/2025 - Presente",
+      "details": [
+        "Desenvolvimento de painel administrativo em Angular integrado a Supabase (PostgreSQL), com autenticação, CRUD e filtros dinâmicos.",
+        "Implementação de componentes reutilizáveis e acessíveis com Angular Material e Tailwind, seguindo boas práticas de UI/UX.",
+        "Utilização de RxJS para encadear requisições e evitar chamadas duplicadas.",
+        "Aplicação de lazy loading, code splitting e otimizações de build, reduzindo o tempo de carregamento inicial."
+      ]
+    },
+    {
+      "title": "Desenvolvedora Angular",
+      "company": "Freelancer",
+      "period": "10/2022 - Presente",
+      "details": [
+        "Criação de aplicações Angular completas com Firebase e PostgreSQL.",
+        "Estruturação de arquiteturas modulares e implementações de autenticação e controle de acesso. ",
+        "Versionamento com o Git, garantindo entregas contínuas e organizadas."
+      ]
+    },
+    {
+      "title": "Analista de Desenvolvimento de Sistemas",
+      "company": "Bluewolfbr",
+      "period": "11/2020 - 02/2022",
+      "details": [
+        "Desenvolvimento full stack com Java (Spring) no back-end e Angular no front-end.",
+        "Responsável pela integração entre camadas front e back, criação de interfaces responsivas e rotas dinâmicas.",
+        "Participação na modelagem de APIs REST e melhoria da experiência do usuário em aplicações internas.",
+        "Promoção temporária a Gerente de Projetos, coordenando equipe de desenvolvimento e entregando um app Angular + Flutter + Java em apenas 2 meses."
+      ]
+    },
+    {
+      "title": "Desenvolvimento de Jogos na Unity",
+      "company": "Experiências Complementares",
+      "period": "02/2022 - Presente",
+      "details": [
+        "Desenvolvimento e otimização de interfaces e sistemas interativos na Unity, com foco em experiência do usuário e performance.",
+        "Aplicação de princípios de design, organização de UI e reuso de componentes que fortalecem a atuação atual em front-end web."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "GRAN",
+      "course": "Pós-graduação em Arquitetura e Desenvolvimento de Sistemas com Ênfase em Padrões de Projeto",
+      "period": "05/2024 - 05/2025",
+      "details": "Ênfase em padrões de projeto, metodologias ágeis e desenvolvimento web frontend (React - HTML, CSS, JavaScript) e backend Java."
+    },
+    {
+      "institution": "UNIT",
+      "course": "Faculdade em Jogos Digitais",
+      "period": "01/2019 - 06/2021",
+      "details": "Liderança de equipe de programação, desenvolvimento em Unity e game design."
+    }
+  ],
+  "languages": [
+    {
+      "name": "Português",
+      "level": "Nativo"
+    },
+    {
+      "name": "Espanhol",
+      "level": "Avançado (C1)"
+    },
+    {
+      "name": "Inglês",
+      "level": "Intermediário (B2)"
+    }
+  ],
+  "courses": [
+    "Formação Angular – Alura",
+    "Formação Front-End – Alura",
+    "Java e Clean Architecture – Alura",
+    "Scrum Fundamentals – SCRUMstudy"
+  ],
+  "skills": {
+    "languages": [
+      {
+        "name": "TypeScript",
+        "years": 3
+      },
+      {
+        "name": "JavaScript",
+        "years": 3
+      },
+      {
+        "name": "HTML",
+        "years": 3
+      },
+      {
+        "name": "CSS",
+        "years": 3
+      },
+      {
+        "name": "SCSS",
+        "years": 3
+      },
+      {
+        "name": "C#",
+        "years": 5
+      },
+      {
+        "name": "Java",
+        "years": 1
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "Angular",
+        "years": 3
+      },
+      {
+        "name": "React",
+        "years": 0.1
+      },
+      {
+        "name": "Unity",
+        "years": 5
+      },
+      {
+        "name": "Flutter",
+        "years": 0.6
+      },
+      {
+        "name": "Tailwind",
+        "years": 0.3
+      },
+      {
+        "name": "Bootstrap",
+        "years": 1
+      },
+      {
+        "name": "RxJS",
+        "years": 2
+      },
+      {
+        "name": "Firebase",
+        "years": 3
+      },
+      {
+        "name": "PostgreSQL",
+        "years": 3
+      },
+      {
+        "name": "Rest API",
+        "years": 3
+      },
+      {
+        "name": "Angular Material",
+        "years": 3
+      },
+      {
+        "name": "Unity",
+        "years": 3
+      },
+      {
+        "name": "UEFN",
+        "years": 0.2
+      },
+      {
+        "name": "Flutter",
+        "years": 0.2
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "years": 5
+      },
+      {
+        "name": "GitHub",
+        "years": 5
+      },
+      {
+        "name": "VS Code",
+        "years": 5
+      },
+      {
+        "name": "Figma",
+        "years": 1
+      },
+      {
+        "name": "Trello",
+        "years": 5
+      },
+      {
+        "name": "Miro",
+        "years": 5
+      },
+      {
+        "name": "Jira",
+        "years": 1
+      },
+      {
+        "name": "Slack",
+        "years": 1
+      },
+      {
+        "name": "ClickUp",
+        "years": 1
+      },
+      {
+        "name": "GIMP",
+        "years": 5
+      },
+      {
+        "name": "Blender",
+        "years": 1
+      }
+    ],
+    "metodologies": [
+      {
+        "name": "SCRUM",
+        "years": 5
+      },
+      {
+        "name": "Kanban",
+        "years": 5
+      },
+      {
+        "name": "Metodologia Ágil",
+        "years": 5
+      },
+      {
+        "name": "Padrões de projeto",
+        "years": 5
+      }
+    ],
+    "soft": [
+      "Organização",
+      "Trabalho em equipe",
+      "Resolução de problemas",
+      "Proatividade",
+      "Adaptabilidade"
+    ]
+  },
+  "activities": [
+    "Mentora voluntária de programação na Women Game Jam 2021",
+    "Top 10 Autismo Tech 2023 com o projeto PonTEA (Flutter)"
+  ]
+}

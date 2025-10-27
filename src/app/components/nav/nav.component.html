@@ -3,7 +3,9 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar class="menu-toolbar">
       <img src="/TIcon.png" alt="Ícone pessoal" />
-      <span class="thayane">Thayane</span>
+      @if(myName) {
+      <span class="my-name">{{ myName!.split(' ')[0] }}</span>
+      }
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#about">Sobre</a>
@@ -27,8 +29,10 @@
       }
 
       <span class="flex-1 flex justify-center items-center gap-2">
-        <img src="/TIcon.png" alt="Ícone pessoal"/>
-        <h1 class="thayane">Thayane Carvalho</h1>
+        <img src="/TIcon.png" alt="Ícone pessoal" />
+        @if(myName){
+        <h1 class="my-name">{{ myName }}</h1>
+        }
       </span>
 
       <button mat-icon-button (click)="changeTheme()">
@@ -38,5 +42,6 @@
       </button>
     </mat-toolbar>
 
+    <app-resume (myName)="setMyName($event)"></app-resume>
   </mat-sidenav-content>
 </mat-sidenav-container>

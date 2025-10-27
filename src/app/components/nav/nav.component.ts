@@ -9,6 +9,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { ThemeService } from '../../services/local-storage/theme.service';
+import { ResumeComponent } from '../resume/resume.component';
+import { PersonalInfo } from '../../interfaces/personal-info';
 
 @Component({
   selector: 'app-nav',
@@ -21,9 +23,12 @@ import { ThemeService } from '../../services/local-storage/theme.service';
     MatListModule,
     MatIconModule,
     AsyncPipe,
+    ResumeComponent,
   ],
 })
 export class NavComponent {
+  myName: string | null = null;
+
   private breakpointObserver = inject(BreakpointObserver);
 
   constructor(public themeService: ThemeService) {}
@@ -37,5 +42,9 @@ export class NavComponent {
 
   changeTheme() {
     this.themeService.toggleTheme();
+  }
+
+  setMyName(myName: string) {
+    this.myName = myName;
   }
 }
