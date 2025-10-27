@@ -8,6 +8,4 @@ import { NavComponent } from './components/nav/nav.component';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {
-  protected title = 'Currículo Thayane';
-}
+export class App {}
