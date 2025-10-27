@@ -1,25 +1,36 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar class="menu-toolbar">
+      <img src="/TIcon.png" alt="Ícone pessoal" />
+      <span class="thayane">Thayane</span>
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#about">Sobre</a>
+      <a mat-list-item href="#experience">Experiência</a>
+      <a mat-list-item href="#education">Formação</a>
+      <a mat-list-item href="#languages">Idiomas</a>
+      <a mat-list-item href="#courses">Cursos</a>
+      <a mat-list-item href="#technical_skills">Hard Skills</a>
+      <a mat-list-item href="#soft_skills">Soft Skills</a>
+      <a mat-list-item href="#extra_activities">Atividades</a>
+      <a mat-list-item href="#contact">Contato</a>
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar class="primary-container">
       @if (isHandset$ | async) {
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       }
 
-      <span class="flex-1"></span>
+      <span class="flex-1 flex justify-center items-center gap-2">
+        <img src="/TIcon.png" alt="Ícone pessoal"/>
+        <h1 class="thayane">Thayane Carvalho</h1>
+      </span>
 
-      <!-- ✅ Botão de alternar tema -->
       <button mat-icon-button (click)="changeTheme()">
         <mat-icon>
           {{ themeService.currentTheme === 'dark' ? 'light_mode' : 'dark_mode' }}
@@ -27,6 +38,5 @@
       </button>
     </mat-toolbar>
 
-    <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -23,13 +23,19 @@ html {
   &.dark {
     color-scheme: dark;
     @include mat.all-component-colors($dark-theme);
+    @include mat.all-component-themes($dark-theme);
+    @include mat.all-component-densities($dark-theme);
     @include mat.system-level-colors($dark-theme);
+    @include mat.system-level-typography($dark-theme);
   }
 
   &.light {
     color-scheme: light;
     @include mat.all-component-colors($light-theme);
+    @include mat.all-component-themes($light-theme);
+    @include mat.all-component-densities($light-theme);
     @include mat.system-level-colors($light-theme);
+    @include mat.system-level-typography($light-theme);
   }
 }
 
