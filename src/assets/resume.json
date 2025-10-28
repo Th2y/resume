@@ -22,6 +22,22 @@
         "Implementação de componentes reutilizáveis e acessíveis com Angular Material e Tailwind, seguindo boas práticas de UI/UX.",
         "Utilização de RxJS para encadear requisições e evitar chamadas duplicadas.",
         "Aplicação de lazy loading, code splitting e otimizações de build, reduzindo o tempo de carregamento inicial."
+      ],
+      "icons": [
+        "angular",
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "scss",
+        "tailwindcss",
+        "supabase",
+        "postgresql",
+        "csharp",
+        "unity",
+        "github",
+        "vercel",
+        "json"
       ]
     },
     {
@@ -32,6 +48,21 @@
         "Criação de aplicações Angular completas com Firebase e PostgreSQL.",
         "Estruturação de arquiteturas modulares e implementações de autenticação e controle de acesso. ",
         "Versionamento com o Git, garantindo entregas contínuas e organizadas."
+      ],
+      "icons": [
+        "angular",
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "scss",
+        "tailwindcss",
+        "firebase",
+        "supabase",
+        "postgresql",
+        "github",
+        "vercel",
+        "json"
       ]
     },
     {
@@ -43,6 +74,24 @@
         "Responsável pela integração entre camadas front e back, criação de interfaces responsivas e rotas dinâmicas.",
         "Participação na modelagem de APIs REST e melhoria da experiência do usuário em aplicações internas.",
         "Promoção temporária a Gerente de Projetos, coordenando equipe de desenvolvimento e entregando um app Angular + Flutter + Java em apenas 2 meses."
+      ],
+      "icons": [
+        "angular",
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "scss",
+        "java",
+        "postgresql",
+        "firebase",
+        "swagger",
+        "flutter",
+        "bootstrap",
+        "github",
+        "heroku",
+        "gimp",
+        "json"
       ]
     },
     {
@@ -52,6 +101,16 @@
       "details": [
         "Desenvolvimento e otimização de interfaces e sistemas interativos na Unity, com foco em experiência do usuário e performance.",
         "Aplicação de princípios de design, organização de UI e reuso de componentes que fortalecem a atuação atual em front-end web."
+      ],
+      "icons": [
+        "unity",
+        "csharp",
+        "postgresql",
+        "firebase",
+        "github",
+        "blender",
+        "gimp",
+        "java"
       ]
     }
   ],
@@ -60,13 +119,34 @@
       "institution": "GRAN",
       "course": "Pós-graduação em Arquitetura e Desenvolvimento de Sistemas com Ênfase em Padrões de Projeto",
       "period": "05/2024 - 05/2025",
-      "details": "Ênfase em padrões de projeto, metodologias ágeis e desenvolvimento web frontend (React - HTML, CSS, JavaScript) e backend Java."
+      "details": [
+        "Ênfase em padrões de projeto, metodologias ágeis e desenvolvimento web frontend (React - HTML, CSS, JavaScript) e backend Java."
+      ],
+      "icons": [
+        "react",
+        "html",
+        "css",
+        "scss",
+        "javascript",
+        "typescript",
+        "java",
+        "github"
+      ]
     },
     {
       "institution": "UNIT",
       "course": "Graduação em Jogos Digitais",
       "period": "01/2019 - 06/2021",
-      "details": "Liderança de equipe de programação, desenvolvimento em Unity e game design."
+      "details": [
+        "Liderança de equipe de programação, desenvolvimento em Unity e game design."
+      ],
+      "icons": [
+        "unity",
+        "csharp",
+        "github",
+        "blender",
+        "gimp"
+      ]
     }
   ],
   "languages": [

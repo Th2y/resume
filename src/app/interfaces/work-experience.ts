@@ -3,4 +3,5 @@ export interface WorkExperience {
   company: string;
   period: string;
   details: string[];
+  icons: string[];
 }

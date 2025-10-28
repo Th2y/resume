@@ -2,9 +2,25 @@
   <h3 class="text-xl font-semibold mb-2">Formação Acadêmica</h3>
   @for (edu of education; track edu.institution) {
   <div class="mb-4">
-    <h4 class="font-semibold">{{ edu.course }}</h4>
+    <div class="flex items-center gap-2 mb-1 flex-wrap">
+      <h4 class="font-semibold">{{ edu.course }}</h4>
+      @if (edu.icons.length) {
+      <div class="flex gap-1 flex-wrap">
+        @for (icon of edu.icons; track icon) {
+        <span class="icon-wrapper" matTooltip="{{ icon | formatSkillName }}" matTooltipPosition="above">
+          <mat-icon svgIcon="{{ icon }}" class="icon-svg"></mat-icon>
+        </span>
+        }
+      </div>
+      }
+    </div>
+
     <p class="text-xs">{{ edu.institution }} — {{ edu.period }}</p>
-    <p>{{ edu.details }}</p>
+    <ul class="list-disc pl-5">
+      @for (detail of edu.details; track $index) {
+      <li>{{ detail }}</li>
+      }
+    </ul>
   </div>
   }
 </section>

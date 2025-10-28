@@ -9,28 +9,35 @@
   </h2>
 
   <p class="location">
-    <mat-icon>location_on</mat-icon>
     {{ personalInfo.location }}
   </p>
 
   <div class="contacts">
     <a href="mailto:{{ personalInfo.contacts.email }}" class="contact-item">
-      <mat-icon>mail</mat-icon>
+      <span class="icon-wrapper">
+        <mat-icon class="icon-font">mail</mat-icon>
+      </span>
       {{ personalInfo.contacts.email }}
     </a>
 
     <a href="https://wa.me/{{ phoneWhatsApp }}" target="_blank" class="contact-item">
-      <mat-icon svgIcon="whatsapp"></mat-icon>
+      <span class="icon-wrapper">
+        <mat-icon svgIcon="whatsapp" class="icon-svg"></mat-icon>
+      </span>
       {{ personalInfo.contacts.phone }}
     </a>
 
     <a href="https://{{ personalInfo.contacts.linkedin }}" target="_blank" class="contact-item">
-      <mat-icon svgIcon="linkedin"></mat-icon>
+      <span class="icon-wrapper">
+        <mat-icon svgIcon="linkedin" class="icon-svg"></mat-icon>
+      </span>
       {{ personalInfo.contacts.linkedin }}
     </a>
 
     <a href="https://{{ personalInfo.contacts.github }}" target="_blank" class="contact-item">
-      <mat-icon svgIcon="github"></mat-icon>
+      <span class="icon-wrapper">
+        <mat-icon svgIcon="github" class="icon-svg"></mat-icon>
+      </span>
       {{ personalInfo.contacts.github }}
     </a>
 

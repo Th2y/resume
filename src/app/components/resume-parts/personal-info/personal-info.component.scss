@@ -26,10 +26,6 @@
     align-items: center;
     color: var(--mat-primary);
     font-weight: 500;
-
-    mat-icon {
-      font-size: 1.1rem;
-    }
   }
 
   .contacts {
@@ -44,10 +40,6 @@
       color: inherit;
       text-decoration: none;
       transition: color 0.2s ease;
-
-      mat-icon {
-        font-size: 1.3rem;
-      }
 
       .icon {
         width: 1.3rem;

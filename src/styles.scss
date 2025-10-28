@@ -76,3 +76,29 @@ body {
 #activities {
   scroll-margin-top: 70px;
 }
+
+.icon-wrapper {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.25rem;
+  background-color: var(--mat-sys-secondary-fixed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.2rem;
+}
+
+.icon-font {
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mat-sys-on-secondary-fixed);
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  color: var(--mat-sys-on-secondary-fixed);
+}
