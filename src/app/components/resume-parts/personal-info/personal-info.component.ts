@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-personal-info',
   imports: [MatIconModule],
+  standalone: true,
   templateUrl: './personal-info.component.html',
   styleUrl: './personal-info.component.scss',
 })

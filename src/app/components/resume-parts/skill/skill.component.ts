@@ -4,6 +4,7 @@ import { Skills } from '../../../interfaces/skills';
 @Component({
   selector: 'app-skill',
   imports: [],
+  standalone: true,
   templateUrl: './skill.component.html',
   styleUrl: './skill.component.scss',
 })

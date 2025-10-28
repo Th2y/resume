@@ -4,6 +4,7 @@ import { Education } from '../../../interfaces/education';
 @Component({
   selector: 'app-education',
   imports: [],
+  standalone: true,
   templateUrl: './education.component.html',
   styleUrl: './education.component.scss',
 })
