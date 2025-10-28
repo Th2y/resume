@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -17,6 +17,7 @@ import { PersonalInfo } from '../../interfaces/personal-info';
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss',
   imports: [
+    CommonModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -27,7 +28,7 @@ import { PersonalInfo } from '../../interfaces/personal-info';
   ],
 })
 export class NavComponent {
-  myName: string | null = null;
+  myName: string = '';
 
   private breakpointObserver = inject(BreakpointObserver);
 
@@ -52,6 +53,8 @@ export class NavComponent {
   }
 
   setMyName(myName: string) {
-    this.myName = myName;
+    setTimeout(() => {
+      this.myName = myName;
+    });
   }
 }
