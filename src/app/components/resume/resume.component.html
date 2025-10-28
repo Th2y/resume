@@ -7,14 +7,7 @@
 
 <app-education [education]="resume.education"></app-education>
 
-<section class="pt-4 px-4">
-  <h3 class="text-xl font-semibold mb-2">Idiomas</h3>
-  <ul>
-    @for (lang of resume.languages; track lang.name) {
-    <li>{{ lang.name }} — {{ lang.level }}</li>
-    }
-  </ul>
-</section>
+<app-language [languages]="resume.languages"></app-language>
 
 <section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Cursos</h3>

@@ -6,6 +6,7 @@ import { PersonalInfoComponent } from "../resume-parts/personal-info/personal-in
 import { SummaryComponent } from '../resume-parts/summary/summary.component';
 import { WorkExperienceComponent } from '../resume-parts/work-experience/work-experience.component';
 import { EducationComponent } from '../resume-parts/education/education.component';
+import { LanguageComponent } from '../resume-parts/language/language.component';
 
 @Component({
   selector: 'app-resume',
@@ -13,7 +14,8 @@ import { EducationComponent } from '../resume-parts/education/education.componen
     PersonalInfoComponent,
     SummaryComponent,
     WorkExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    LanguageComponent
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss',
