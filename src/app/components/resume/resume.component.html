@@ -5,16 +5,7 @@
 
 <app-work-experience [workExperience]="resume.experience"></app-work-experience>
 
-<section class="pt-4 px-4">
-  <h3 class="text-xl font-semibold mb-2">Formação Acadêmica</h3>
-  @for (edu of resume.education; track edu.institution) {
-  <div class="mb-4">
-    <h4 class="font-semibold">{{ edu.course }}</h4>
-    <p class="text-sm text-gray-600">{{ edu.institution }} — {{ edu.period }}</p>
-    <p>{{ edu.details }}</p>
-  </div>
-  }
-</section>
+<app-education [education]="resume.education"></app-education>
 
 <section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Idiomas</h3>

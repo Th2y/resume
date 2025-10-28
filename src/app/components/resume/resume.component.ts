@@ -5,13 +5,15 @@ import { PersonalInfo } from '../../interfaces/personal-info';
 import { PersonalInfoComponent } from "../resume-parts/personal-info/personal-info.component";
 import { SummaryComponent } from '../resume-parts/summary/summary.component';
 import { WorkExperienceComponent } from '../resume-parts/work-experience/work-experience.component';
+import { EducationComponent } from '../resume-parts/education/education.component';
 
 @Component({
   selector: 'app-resume',
   imports: [
     PersonalInfoComponent,
     SummaryComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    EducationComponent
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss',
