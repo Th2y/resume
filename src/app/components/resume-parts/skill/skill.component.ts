@@ -13,6 +13,7 @@ export class SkillComponent {
   skillsGroups = [
     { key: 'languages', label: 'Linguagens' },
     { key: 'frameworks', label: 'Frameworks' },
+    { key: 'databases', label: 'Bancos de Dados' },
     { key: 'tools', label: 'Ferramentas' },
     { key: 'metodologies', label: 'Metodologias' },
   ] as const;

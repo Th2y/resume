@@ -6,6 +6,7 @@ export interface SkillItem {
 export interface Skills {
   languages: SkillItem[];
   frameworks: SkillItem[];
+  databases: SkillItem[];
   tools: SkillItem[];
   metodologies: SkillItem[];
   soft: string[];

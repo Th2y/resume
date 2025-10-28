@@ -1,3 +1,8 @@
+.background {
+  background-color: var(--mat-sys-surface-container);
+  color: var(--mat-sys-on-surface-container);
+}
+
 .primary-container {
   position: fixed;
   top: 0;

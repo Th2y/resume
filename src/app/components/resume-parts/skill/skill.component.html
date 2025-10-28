@@ -2,17 +2,39 @@
 <section class="pt-4 px-4" id="technical_skills">
   <h3 class="text-xl font-semibold mb-2">Habilidades Técnicas</h3>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     @for (group of skillsGroups; track $index) {
-    <div>
-      <h4 class="font-semibold capitalize">{{ group.label }}</h4>
-      <ul class="text-sm">
-        @if(skills){
+    <div class="skill-bg p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
+      <h4 class="font-semibold capitalize text-primary text-center mb-3 border-b pb-1">
+        {{ group.label }}
+      </h4>
+      <ul class="text-sm text-muted-foreground space-y-1">
+        @if (skills) {
         @for (item of skills[group.key]; track $index) {
-        @if (item.name) {
-        <li>{{ item.name }} — {{ item.years }} anos</li>
+        @if (item.years == 1) {
+        <li class="flex justify-between">
+          <span>{{ item.name }}</span>
+          <span class="text-xs text-gray-500">{{ item.years }} ano</span>
+        </li>
+        } @else if (item.years > 1) {
+        <li class="flex justify-between">
+          <span>{{ item.name }}</span>
+          <span class="text-xs text-gray-500">{{ item.years }} anos</span>
+        </li>
         } @else {
-        <li>{{ item }}</li>
+        @if (item.years > 0.1) {
+        <li class="flex justify-between">
+          <span>{{ item.name }}</span>
+          <span class="text-xs text-gray-500">
+            {{ item.years.toString().replace('0.', '') }} meses
+          </span>
+        </li>
+        } @else {
+        <li class="flex justify-between">
+          <span>{{ item.name }}</span>
+          <span class="text-xs text-gray-500">1 mês</span>
+        </li>
+        }
         }
         }
         }
@@ -20,13 +42,14 @@
     </div>
     }
   </div>
+
 </section>
 
 <section class="pt-4 px-4" id="soft_skills">
   <h3 class="text-xl font-semibold mb-2">Habilidades Interpessoais</h3>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="skill-bg p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
       <ul class="text-sm">
         @for (item of skills['soft']; track $index) {
         <li>{{ item }}</li>

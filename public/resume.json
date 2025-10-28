@@ -130,10 +130,6 @@
         "years": 0.1
       },
       {
-        "name": "Unity",
-        "years": 5
-      },
-      {
         "name": "Tailwind",
         "years": 0.3
       },
@@ -146,20 +142,12 @@
         "years": 2
       },
       {
-        "name": "Firebase",
-        "years": 3
-      },
-      {
-        "name": "PostgreSQL",
-        "years": 3
-      },
-      {
         "name": "Rest API",
         "years": 3
       },
       {
-        "name": "Angular Material",
-        "years": 3
+        "name": "Unity",
+        "years": 5
       },
       {
         "name": "UEFN",
@@ -168,6 +156,16 @@
       {
         "name": "Flutter",
         "years": 0.2
+      }
+    ],
+    "databases": [
+      {
+        "name": "Firebase",
+        "years": 3
+      },
+      {
+        "name": "PostgreSQL",
+        "years": 3
       }
     ],
     "tools": [

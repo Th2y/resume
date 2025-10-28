@@ -40,10 +40,9 @@ html {
 }
 
 body {
-  background-color: var(--mat-sys-surface);
-  color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
   margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 html,
@@ -51,13 +50,15 @@ body {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-#about, #objective, #summary, #experience, #education, #languages, #courses,
-#technical_skills, #soft_skills, #activities {
+#about,
+#objective,
+#summary,
+#experience,
+#education,
+#languages,
+#courses,
+#technical_skills,
+#soft_skills,
+#activities {
   scroll-margin-top: 70px;
 }
-
