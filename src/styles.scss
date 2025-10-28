@@ -55,3 +55,9 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+#about, #objective, #summary, #experience, #education, #languages, #courses,
+#technical_skills, #soft_skills, #activities {
+  scroll-margin-top: 70px;
+}
+

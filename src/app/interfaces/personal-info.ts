@@ -5,5 +5,4 @@ export interface PersonalInfo {
   title: string;
   location: string;
   contacts: ContactInfo;
-  objective: string;
 }

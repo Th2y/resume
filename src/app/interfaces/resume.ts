@@ -6,6 +6,7 @@ import { WorkExperience } from "./work-experience";
 
 export interface Resume {
   personal: PersonalInfo;
+  objective: string;
   summary: string;
   experience: WorkExperience[];
   education: Education[];

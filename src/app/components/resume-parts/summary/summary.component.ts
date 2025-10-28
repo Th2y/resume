@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './summary.component.scss',
 })
 export class SummaryComponent {
+  @Input() objective: string | null = null;
   @Input() summary: string | null = null;
 }

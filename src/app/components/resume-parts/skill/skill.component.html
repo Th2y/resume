@@ -1,5 +1,6 @@
-<section class="pt-4 px-4">
-  <h3 class="text-xl font-semibold mb-2">Competências Técnicas</h3>
+@if(skills){
+<section class="pt-4 px-4" id="technical_skills">
+  <h3 class="text-xl font-semibold mb-2">Habilidades Técnicas</h3>
 
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
     @for (group of skillsGroups; track $index) {
@@ -21,17 +22,14 @@
   </div>
 </section>
 
-@if(skills){
-<section class="pt-4 px-4">
-  <h3 class="text-xl font-semibold mb-2">Competências Comportamentais</h3>
+<section class="pt-4 px-4" id="soft_skills">
+  <h3 class="text-xl font-semibold mb-2">Habilidades Interpessoais</h3>
 
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div>
       <ul class="text-sm">
-        @if(skills){
         @for (item of skills['soft']; track $index) {
         <li>{{ item }}</li>
-        }
         }
       </ul>
     </div>
