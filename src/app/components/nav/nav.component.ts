@@ -60,4 +60,11 @@ export class NavComponent {
       this.myName = myName;
     });
   }
+
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/curriculo.pdf';
+    link.download = 'Desenvolvedor Front-end Angular - Thayane Carvalho dos Santos.pdf';
+    link.click();
+  }
 }
