@@ -2,7 +2,7 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar class="menu-toolbar">
-      <img src="/TIcon.png" alt="Ícone pessoal" />
+      <img src="/assets/TIcon.png" alt="Ícone pessoal" />
       @if(myName) {
       <span class="my-name">{{ myName!.split(' ')[0] }}</span>
       }
@@ -33,7 +33,7 @@
       }
 
       <span class="flex-1 flex justify-center items-center gap-2">
-        <img src="/TIcon.png" alt="Ícone pessoal" />
+        <img src="/assets/TIcon.png" alt="Ícone pessoal" />
         @if(myName){
         <h1 class="my-name">{{ myName }}</h1>
         }

@@ -7,7 +7,7 @@ import { Resume } from '../../interfaces/resume';
   providedIn: 'root',
 })
 export class ResumeService {
-  private readonly resumeUrl = '/resume.json';
+  private readonly resumeUrl = '/assets/resume.json';
 
   constructor(private http: HttpClient) {}
 
