@@ -9,6 +9,7 @@ import { EducationComponent } from '../resume-parts/education/education.componen
 import { LanguageComponent } from '../resume-parts/language/language.component';
 import { CourseComponent } from '../resume-parts/course/course.component';
 import { ActivityComponent } from '../resume-parts/activity/activity.component';
+import { SkillComponent } from "../resume-parts/skill/skill.component";
 
 @Component({
   selector: 'app-resume',
@@ -19,8 +20,9 @@ import { ActivityComponent } from '../resume-parts/activity/activity.component';
     EducationComponent,
     LanguageComponent,
     CourseComponent,
-    ActivityComponent
-  ],
+    ActivityComponent,
+    SkillComponent
+],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss',
 })
@@ -28,13 +30,6 @@ export class ResumeComponent implements OnInit {
   @Output() myName = new EventEmitter<string>();
 
   resume: Resume | null = null;
-
-  skillsGroups = [
-    { key: 'languages', label: 'Linguagens' },
-    { key: 'frameworks', label: 'Frameworks' },
-    { key: 'tools', label: 'Ferramentas' },
-    { key: 'metodologies', label: 'Metodologias' },
-  ] as const;
 
   constructor(private resumeService: ResumeService) {}
 

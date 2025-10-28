@@ -11,26 +11,7 @@
 
 <app-course [courses]="resume.courses"></app-course>
 
-<section class="pt-4 px-4">
-  <h3 class="text-xl font-semibold mb-2">Competências Técnicas</h3>
-
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    @for (group of skillsGroups; track $index) {
-    <div>
-      <h4 class="font-semibold capitalize">{{ group.label }}</h4>
-      <ul class="text-sm">
-        @for (item of resume.skills[group.key]; track $index) {
-        @if (item.name) {
-        <li>{{ item.name }} — {{ item.years }} anos</li>
-        } @else {
-        <li>{{ item }}</li>
-        }
-        }
-      </ul>
-    </div>
-    }
-  </div>
-</section>
+<app-skill [skills]="resume.skills"></app-skill>
 
 <app-activity [activities]="resume.activities"></app-activity>
 }@else {
