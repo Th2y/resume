@@ -1,6 +1,6 @@
-import { Component, inject } from '@angular/core';
+import { Component, Inject, inject, PLATFORM_ID } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { AsyncPipe, CommonModule } from '@angular/common';
+import { AsyncPipe, CommonModule, isPlatformBrowser } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -32,7 +32,10 @@ export class NavComponent {
 
   private breakpointObserver = inject(BreakpointObserver);
 
-  constructor(public themeService: ThemeService) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    public themeService: ThemeService
+  ) {}
 
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
@@ -42,7 +45,7 @@ export class NavComponent {
     );
 
   scrollTo(sectionId: string) {
-    if (typeof window !== 'undefined') {
+    if (isPlatformBrowser(this.platformId)) {
       const el = document.getElementById(sectionId);
       el?.scrollIntoView({ behavior: 'smooth' });
     }

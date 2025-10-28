@@ -36,9 +36,10 @@ export class ResumeComponent implements OnInit {
 
   ngOnInit(): void {
     this.resumeService.getResume().subscribe((resume) => {
-      this.resume = resume;
-
-      this.myName.emit(resume.personal.name);
+      if (resume?.personal?.name) {
+        this.resume = resume;
+        this.myName.emit(resume.personal.name);
+      }
     });
   }
 }
