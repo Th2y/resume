@@ -1,0 +1,14 @@
+<section class="pt-4 px-4">
+  <h3 class="text-xl font-semibold mb-2">Experiência Profissional</h3>
+  @for (exp of workExperience; track exp.company) {
+  <div class="mb-4">
+    <h4 class="font-semibold">{{ exp.title }} — {{ exp.company }}</h4>
+    <p class="text-sm text-gray-600">{{ exp.period }}</p>
+    <ul class="list-disc pl-5">
+      @for (detail of exp.details; track $index) {
+      <li>{{ detail }}</li>
+      }
+    </ul>
+  </div>
+  }
+</section>
