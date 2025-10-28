@@ -1,0 +1,8 @@
+<section class="pt-4 px-4">
+  <h3 class="text-xl font-semibold mb-2">Cursos</h3>
+  <ul>
+    @for (course of courses; track $index) {
+    <li>{{ course }}</li>
+    }
+  </ul>
+</section>

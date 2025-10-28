@@ -9,14 +9,7 @@
 
 <app-language [languages]="resume.languages"></app-language>
 
-<section class="pt-4 px-4">
-  <h3 class="text-xl font-semibold mb-2">Cursos</h3>
-  <ul>
-    @for (course of resume.courses; track $index) {
-    <li>{{ course }}</li>
-    }
-  </ul>
-</section>
+<app-course [courses]="resume.courses"></app-course>
 
 <section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Competências Técnicas</h3>

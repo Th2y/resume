@@ -1,12 +1,13 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+
 import { Resume } from '../../interfaces/resume';
 import { ResumeService } from '../../services/http/resume.service';
-import { PersonalInfo } from '../../interfaces/personal-info';
 import { PersonalInfoComponent } from "../resume-parts/personal-info/personal-info.component";
 import { SummaryComponent } from '../resume-parts/summary/summary.component';
 import { WorkExperienceComponent } from '../resume-parts/work-experience/work-experience.component';
 import { EducationComponent } from '../resume-parts/education/education.component';
 import { LanguageComponent } from '../resume-parts/language/language.component';
+import { CourseComponent } from '../resume-parts/course/course.component';
 
 @Component({
   selector: 'app-resume',
@@ -15,7 +16,8 @@ import { LanguageComponent } from '../resume-parts/language/language.component';
     SummaryComponent,
     WorkExperienceComponent,
     EducationComponent,
-    LanguageComponent
+    LanguageComponent,
+    CourseComponent
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss',
