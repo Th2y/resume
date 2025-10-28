@@ -1,23 +1,12 @@
 @if(resume) {
+<app-personal-info [personalInfo]="resume.personal"></app-personal-info>
 
-<header class="p-6 text-center">
-  <h2 class="text-lg">{{ resume.personal.title }}</h2>
-  <p>{{ resume.personal.location }}</p>
-
-  <div class="mt-2 text-sm">
-    <a href="mailto:{{ resume.personal.contacts.email }}">{{ resume.personal.contacts.email }}</a> |
-    <a href="tel:{{ resume.personal.contacts.phone }}">{{ resume.personal.contacts.phone }}</a> |
-    <a href="https://{{ resume.personal.contacts.linkedin }}" target="_blank">LinkedIn</a> |
-    <a href="https://{{ resume.personal.contacts.github }}" target="_blank">GitHub</a>
-  </div>
-</header>
-
-<section class="p-6">
+<section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Resumo Profissional</h3>
   <p>{{ resume.summary }}</p>
 </section>
 
-<section class="p-6">
+<section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Experiência Profissional</h3>
   @for (exp of resume.experience; track exp.company) {
   <div class="mb-4">
@@ -32,7 +21,7 @@
   }
 </section>
 
-<section class="p-6">
+<section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Formação Acadêmica</h3>
   @for (edu of resume.education; track edu.institution) {
   <div class="mb-4">
@@ -43,7 +32,7 @@
   }
 </section>
 
-<section class="p-6">
+<section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Idiomas</h3>
   <ul>
     @for (lang of resume.languages; track lang.name) {
@@ -52,7 +41,7 @@
   </ul>
 </section>
 
-<section class="p-6">
+<section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Cursos</h3>
   <ul>
     @for (course of resume.courses; track $index) {
@@ -61,7 +50,7 @@
   </ul>
 </section>
 
-<section class="p-6">
+<section class="pt-4 px-4">
   <h3 class="text-xl font-semibold mb-2">Competências Técnicas</h3>
 
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -82,7 +71,7 @@
   </div>
 </section>
 
-<section class="p-6">
+<section class="p-4">
   <h3 class="text-xl font-semibold mb-2">Atividades Extras</h3>
   <ul>
     @for (activity of resume.activities; track $index) {

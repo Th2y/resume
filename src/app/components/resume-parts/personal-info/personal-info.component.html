@@ -1,0 +1,38 @@
+@if (personalInfo) {
+<header class="about-section" id="about">
+  <h2 class="title">
+    @for (part of personalInfo.title.split('|'); track $index) {
+    <span class="title-part" [class.second-line]="$index === 1">
+      {{ part.trim() }}
+    </span>
+    }
+  </h2>
+
+  <p class="location">
+    <mat-icon>location_on</mat-icon>
+    Localização: {{ personalInfo.location }}
+  </p>
+
+  <div class="contacts">
+    <a href="mailto:{{ personalInfo.contacts.email }}" class="contact-item">
+      <mat-icon>mail</mat-icon>
+      Email: {{ personalInfo.contacts.email }}
+    </a>
+
+    <a href="https://wa.me/{{ phoneWhatsApp }}" target="_blank" class="contact-item">
+      <img src="/whatsapp.svg" alt="WhatsApp" class="icon" />
+      WhatsApp: {{ personalInfo.contacts.phone }}
+    </a>
+
+    <a href="https://{{ personalInfo.contacts.linkedin }}" target="_blank" class="contact-item">
+      <img src="/linkedin.svg" alt="LinkedIn" class="icon" />
+      LinkedIn: {{ personalInfo.contacts.linkedin }}
+    </a>
+
+    <a href="https://{{ personalInfo.contacts.github }}" target="_blank" class="contact-item">
+      <img src="/github.svg" alt="GitHub" class="icon" />
+      GitHub: {{ personalInfo.contacts.github }}
+    </a>
+  </div>
+</header>
+}

@@ -40,6 +40,13 @@ export class NavComponent {
       shareReplay()
     );
 
+  scrollTo(sectionId: string) {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   changeTheme() {
     this.themeService.toggleTheme();
   }

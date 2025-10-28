@@ -1,4 +1,9 @@
-.primary-container{
+.primary-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: var(--mat-sys-inverse-primary);
   border-bottom-right-radius: 1rem;
 }

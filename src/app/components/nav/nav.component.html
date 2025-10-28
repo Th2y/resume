@@ -8,15 +8,15 @@
       }
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#about">Sobre</a>
-      <a mat-list-item href="#experience">Experiência</a>
-      <a mat-list-item href="#education">Formação</a>
-      <a mat-list-item href="#languages">Idiomas</a>
-      <a mat-list-item href="#courses">Cursos</a>
-      <a mat-list-item href="#technical_skills">Hard Skills</a>
-      <a mat-list-item href="#soft_skills">Soft Skills</a>
-      <a mat-list-item href="#extra_activities">Atividades</a>
-      <a mat-list-item href="#contact">Contato</a>
+      <a mat-list-item (click)="scrollTo('about')">Sobre</a>
+      <a mat-list-item (click)="scrollTo('experience')">Experiência</a>
+      <a mat-list-item (click)="scrollTo('education')">Formação</a>
+      <a mat-list-item (click)="scrollTo('languages')">Idiomas</a>
+      <a mat-list-item (click)="scrollTo('courses')">Cursos</a>
+      <a mat-list-item (click)="scrollTo('technical_skills')">Hard Skills</a>
+      <a mat-list-item (click)="scrollTo('soft_skills')">Soft Skills</a>
+      <a mat-list-item (click)="scrollTo('extra_activities')">Atividades</a>
+      <a mat-list-item (click)="scrollTo('contact')">Contato</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -42,6 +42,8 @@
       </button>
     </mat-toolbar>
 
-    <app-resume (myName)="setMyName($event)"></app-resume>
+    <div style="margin-top: 68px;">
+      <app-resume (myName)="setMyName($event)"></app-resume>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
