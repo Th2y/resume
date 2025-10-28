@@ -42,9 +42,9 @@ export class NavComponent {
     );
 
   scrollTo(sectionId: string) {
-    const el = document.getElementById(sectionId);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+    if (typeof window !== 'undefined') {
+      const el = document.getElementById(sectionId);
+      el?.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
