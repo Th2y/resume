@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+
 import { PersonalInfo } from '../../../interfaces/personal-info';
-import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-personal-info',
@@ -11,6 +13,24 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class PersonalInfoComponent {
   @Input() personalInfo: PersonalInfo | null = null;
+
+  constructor(
+    private iconRegistry: MatIconRegistry,
+    private sanitizer: DomSanitizer
+  ) {
+    this.iconRegistry.addSvgIcon(
+      'whatsapp',
+      this.sanitizer.bypassSecurityTrustResourceUrl('assets/whatsapp.svg')
+    );
+    this.iconRegistry.addSvgIcon(
+      'github',
+      this.sanitizer.bypassSecurityTrustResourceUrl('assets/github.svg')
+    );
+    this.iconRegistry.addSvgIcon(
+      'linkedin',
+      this.sanitizer.bypassSecurityTrustResourceUrl('assets/linkedin.svg')
+    );
+  }
 
   formatTitle(title: string): string {
     return title.replace(/\s*\|\s*/g, '<br>');
