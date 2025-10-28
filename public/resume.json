@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Thayane Carvalho dos Santos",
-    "title": "Desenvolvedor Front-End Angular | TypeScript, JavaScript, HTML, CSS, PostgreSQL, Firebase",
+    "title": "Desenvolvedora Front-End Angular | TypeScript, JavaScript, HTML, CSS, PostgreSQL, Firebase",
     "location": "Aracaju, Sergipe, Brasil",
     "contacts": {
       "phone": "+55 (79) 9 8119-0742",
@@ -10,8 +10,8 @@
       "github": "github.com/Th2y"
     }
   },
-  "objective": "Atuar como Desenvolvedor Front-End Angular, aplicando boas práticas de arquitetura, performance e UX para criar interfaces escaláveis e responsivas, entregando soluções eficientes e código limpo.",
-  "summary": "Desenvolvedor Front-End com mais de 3 anos de experiência em Angular, HTML, CSS, TypeScript e JavaScript, especializado em interfaces performáticas e componentização. Experiência em Angular Material, Tailwind, Firebase e PostgreSQL, aplicando RxJS e lazy loading para otimização. Iniciei como FullStack (Java + Angular + PostgreSQL), o que fortaleceu minha visão completa do ciclo de desenvolvimento.",
+  "objective": "Atuar como Desenvolvedora Front-End Angular, aplicando boas práticas de arquitetura, performance e UX para criar interfaces escaláveis e responsivas, entregando soluções eficientes e código limpo.",
+  "summary": "Desenvolvedora Front-End com mais de 3 anos de experiência em Angular, HTML, CSS, TypeScript e JavaScript, especializado em interfaces performáticas e componentização. Experiência em Angular Material, Tailwind, Firebase e PostgreSQL, aplicando RxJS e lazy loading para otimização. Iniciei como FullStack (Java + Angular + PostgreSQL), o que fortaleceu minha visão completa do ciclo de desenvolvimento.",
   "experience": [
     {
       "title": "Desenvolvedora Angular Pleno e Unity",
@@ -134,10 +134,6 @@
         "years": 5
       },
       {
-        "name": "Flutter",
-        "years": 0.6
-      },
-      {
         "name": "Tailwind",
         "years": 0.3
       },
@@ -163,10 +159,6 @@
       },
       {
         "name": "Angular Material",
-        "years": 3
-      },
-      {
-        "name": "Unity",
         "years": 3
       },
       {

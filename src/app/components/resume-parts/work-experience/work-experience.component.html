@@ -3,7 +3,7 @@
   @for (exp of workExperience; track exp.company) {
   <div class="mb-4">
     <h4 class="font-semibold">{{ exp.title }} — {{ exp.company }}</h4>
-    <p class="text-sm text-gray-600">{{ exp.period }}</p>
+    <p class="text-xs">{{ exp.period }}</p>
     <ul class="list-disc pl-5">
       @for (detail of exp.details; track $index) {
       <li>{{ detail }}</li>
