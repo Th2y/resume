@@ -8,6 +8,7 @@ import { WorkExperienceComponent } from '../resume-parts/work-experience/work-ex
 import { EducationComponent } from '../resume-parts/education/education.component';
 import { LanguageComponent } from '../resume-parts/language/language.component';
 import { CourseComponent } from '../resume-parts/course/course.component';
+import { ActivityComponent } from '../resume-parts/activity/activity.component';
 
 @Component({
   selector: 'app-resume',
@@ -17,7 +18,8 @@ import { CourseComponent } from '../resume-parts/course/course.component';
     WorkExperienceComponent,
     EducationComponent,
     LanguageComponent,
-    CourseComponent
+    CourseComponent,
+    ActivityComponent
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss',

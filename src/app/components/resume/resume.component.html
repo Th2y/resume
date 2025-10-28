@@ -32,14 +32,7 @@
   </div>
 </section>
 
-<section class="p-4">
-  <h3 class="text-xl font-semibold mb-2">Atividades Extras</h3>
-  <ul>
-    @for (activity of resume.activities; track $index) {
-    <li>{{ activity }}</li>
-    }
-  </ul>
-</section>
+<app-activity [activities]="resume.activities"></app-activity>
 }@else {
 Carregando...
 }
