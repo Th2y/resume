@@ -1,5 +1,5 @@
 @if (personalInfo) {
-<header class="about-section" id="about">
+<header class="about-section py-4" id="about">
   <h2 class="title">
     @for (part of personalInfo.title.split('|'); track $index) {
     <span class="title-part" [class.second-line]="$index === 1">

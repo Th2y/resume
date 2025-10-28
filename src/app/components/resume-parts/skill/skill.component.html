@@ -14,25 +14,25 @@
         @if (item.years == 1) {
         <li class="flex justify-between">
           <span>{{ item.name }}</span>
-          <span class="text-xs text-gray-500">{{ item.years }} ano</span>
+          <span class="text-xs text-muted">{{ item.years }} ano</span>
         </li>
         } @else if (item.years > 1) {
         <li class="flex justify-between">
           <span>{{ item.name }}</span>
-          <span class="text-xs text-gray-500">{{ item.years }} anos</span>
+          <span class="text-xs text-muted">{{ item.years }} anos</span>
         </li>
         } @else {
         @if (item.years > 0.1) {
         <li class="flex justify-between">
           <span>{{ item.name }}</span>
-          <span class="text-xs text-gray-500">
+          <span class="text-xs text-muted">
             {{ item.years.toString().replace('0.', '') }} meses
           </span>
         </li>
         } @else {
         <li class="flex justify-between">
           <span>{{ item.name }}</span>
-          <span class="text-xs text-gray-500">1 mês</span>
+          <span class="text-xs text-muted">1 mês</span>
         </li>
         }
         }

@@ -1,7 +1,7 @@
-@use "tailwindcss" as *;
-
 @use '@angular/material' as mat;
 @use '../src/app/styles/theme-colors.scss' as theme;
+
+@import "tailwindcss";
 
 @include mat.core();
 
@@ -27,6 +27,13 @@ html {
     @include mat.all-component-densities($dark-theme);
     @include mat.system-level-colors($dark-theme);
     @include mat.system-level-typography($dark-theme);
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--mat-sys-on-surface);
+    }
   }
 
   &.light {
@@ -36,6 +43,13 @@ html {
     @include mat.all-component-densities($light-theme);
     @include mat.system-level-colors($light-theme);
     @include mat.system-level-typography($light-theme);
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--mat-sys-on-tertiary-container);
+    }
   }
 }
 
