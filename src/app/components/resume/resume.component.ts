@@ -3,10 +3,14 @@ import { Resume } from '../../interfaces/resume';
 import { ResumeService } from '../../services/http/resume.service';
 import { PersonalInfo } from '../../interfaces/personal-info';
 import { PersonalInfoComponent } from "../resume-parts/personal-info/personal-info.component";
+import { SummaryComponent } from '../resume-parts/summary/summary.component';
 
 @Component({
   selector: 'app-resume',
-  imports: [PersonalInfoComponent],
+  imports: [
+    PersonalInfoComponent,
+    SummaryComponent
+  ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss',
 })
