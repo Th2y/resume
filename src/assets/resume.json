@@ -10,18 +10,20 @@
       "github": "github.com/Th2y"
     }
   },
-  "objective": "Atuar como Desenvolvedora Front-End Angular, aplicando boas práticas de arquitetura, performance e UX para criar interfaces escaláveis e responsivas, entregando soluções eficientes e código limpo.",
-  "summary": "Desenvolvedora Front-End com mais de 3 anos de experiência em Angular, HTML, CSS, TypeScript e JavaScript, especializado em interfaces performáticas e componentização. Experiência em Angular Material, Tailwind, Firebase e PostgreSQL, aplicando RxJS e lazy loading para otimização. Iniciei como FullStack (Java + Angular + PostgreSQL), o que fortaleceu minha visão completa do ciclo de desenvolvimento.",
+  "objective": "Atuar como Desenvolvedora Front-End Angular, aplicando boas práticas de arquitetura, performance e UI/UX para construir interfaces modernas, escaláveis e acessíveis, contribuindo para a entrega de produtos digitais de alta qualidade e código limpo.",
+  "summary": "Desenvolvedora Front-End com mais de 3 anos de experiência em Angular, especializada na criação de interfaces performáticas, responsivas e modulares.\nDomino HTML, CSS, TypeScript, JavaScript e Angular Material, com experiência em Tailwind, Firebase e PostgreSQL.\nAplico RxJS, lazy loading e code splitting para otimização de performance, mantendo foco em arquitetura escalável e experiência do usuário.\nPossuo sólida base Full-stack (Java + Angular + PostgreSQL) e experiência complementar em Unity (C#), unindo lógica, usabilidade e integração entre web e jogos.\nSou pós-graduada em Arquitetura e Desenvolvimento de Sistemas, com ênfase em Padrões de Projeto e Metodologias Ágeis, fortalecendo a visão arquitetural e o domínio técnico em aplicações modernas.",
   "experience": [
     {
       "title": "Desenvolvedora Angular Pleno e Unity",
       "company": "Horse Power Studio",
       "period": "05/2025 - Presente",
       "details": [
-        "Desenvolvimento de painel administrativo em Angular integrado a Supabase (PostgreSQL), com autenticação, CRUD e filtros dinâmicos.",
-        "Implementação de componentes reutilizáveis e acessíveis com Angular Material e Tailwind, seguindo boas práticas de UI/UX.",
-        "Utilização de RxJS para encadear requisições e evitar chamadas duplicadas.",
-        "Aplicação de lazy loading, code splitting e otimizações de build, reduzindo o tempo de carregamento inicial."
+        "Desenvolvimento e manutenção de painel administrativo em Angular, integrando Supabase (PostgreSQL) para autenticação, CRUD completo e filtros dinâmicos de alta performance.",
+        "Criação de componentes modulares, acessíveis e responsivos com Angular Material, SCSS e TailwindCSS, garantindo consistência visual e escalabilidade.",
+        "Utilização avançada de RxJS para otimizar o fluxo de dados, encadear requisições e eliminar chamadas redundantes, melhorando o desempenho geral da aplicação.",
+        "Implementação de estratégias de otimização, como lazy loading, code splitting e build refinado, reduzindo o tempo de carregamento e melhorando a experiência do usuário.",
+        "Colaboração ativa em projetos de Unity com C#, aplicando princípios de interface interativa e lógica de jogo, reforçando integração entre front-end web e desenvolvimento de jogos.",
+        "Deploy e versionamento contínuo via GitHub e Vercel, garantindo entregas rápidas e confiáveis em ambiente de produção."
       ],
       "icons": [
         "angular",
@@ -45,9 +47,11 @@
       "company": "Freelancer",
       "period": "10/2022 - Presente",
       "details": [
-        "Criação de aplicações Angular completas com Firebase e PostgreSQL.",
-        "Estruturação de arquiteturas modulares e implementações de autenticação e controle de acesso. ",
-        "Versionamento com o Git, garantindo entregas contínuas e organizadas."
+        "Desenvolvimento de aplicações completas em Angular, integrando Firebase ou PostgreSQL para autenticação, armazenamento e gerenciamento de dados em tempo real.",
+        "Criação de arquiteturas modulares e escaláveis com TypeScript, seguindo princípios SOLID e boas práticas de componentização e manutenção de código.",
+        "Implementação de autenticação segura, controle de acesso por papéis e fluxos de login com Firebase Authentication ou Supabase Auth.",
+        "Construção de interfaces responsivas e modernas com SCSS e TailwindCSS, garantindo excelente experiência do usuário em múltiplos dispositivos.",
+        "Gerenciamento de versionamento e deploy contínuo com Git e Vercel, mantendo histórico limpo e entregas ágeis e organizadas."
       ],
       "icons": [
         "angular",
@@ -70,10 +74,12 @@
       "company": "Bluewolfbr",
       "period": "11/2020 - 02/2022",
       "details": [
-        "Desenvolvimento full stack com Java (Spring) no back-end e Angular no front-end.",
-        "Responsável pela integração entre camadas front e back, criação de interfaces responsivas e rotas dinâmicas.",
-        "Participação na modelagem de APIs REST e melhoria da experiência do usuário em aplicações internas.",
-        "Promoção temporária a Gerente de Projetos, coordenando equipe de desenvolvimento e entregando um app Angular + Flutter + Java em apenas 2 meses."
+        "Atuação full stack no desenvolvimento de sistemas corporativos, utilizando Angular no Front-end e Java (Spring Boot) no Cack-end, com integração via APIs REST.",
+        "Implementação de interfaces responsivas e dinâmicas com HTML, SCSS e Bootstrap, otimizando a experiência do usuário e a performance das aplicações internas.",
+        "Modelagem e documentação de APIs com Swagger, garantindo padronização e clareza na comunicação entre o Front-End e o Back-end.",
+        "Integração de Firebase ou PostgreSQL para autenticação, persistência de dados e notificações em tempo real.",
+        "Liderança temporária de equipe como Gerente de Projetos, coordenando desenvolvedores e entregando um app multiplataforma (Angular + Flutter + Java) em apenas 2 meses.",
+        "Implantação e manutenção de aplicações em ambiente cloud com Heroku e versionamento contínuo com Git."
       ],
       "icons": [
         "angular",
@@ -99,8 +105,12 @@
       "company": "Experiências Complementares",
       "period": "02/2022 - Presente",
       "details": [
-        "Desenvolvimento e otimização de interfaces e sistemas interativos na Unity, com foco em experiência do usuário e performance.",
-        "Aplicação de princípios de design, organização de UI e reuso de componentes que fortalecem a atuação atual em front-end web."
+        "Desenvolvimento de jogos e experiências interativas na Unity, com foco em usabilidade, performance e boas práticas de arquitetura de código em C#.",
+        "Implementação e otimização de sistemas de interface (UI/UX), efeitos visuais e lógicas de gameplay reutilizáveis.",
+        "Integração de módulos Java à build Android da Unity, desenvolvendo recursos nativos não suportados pela engine e garantindo compatibilidade com o ecossistema mobile.",
+        "Utilização de Firebase ou PostgreSQL para autenticação, armazenamento de progresso e sincronização de dados em tempo real.",
+        "Criação e edição de assets simples em 2D e 3D no Blender e GIMP, alinhando arte e programação de forma coesa.",
+        "Versionamento de projetos e controle de entregas utilizando Git."
       ],
       "icons": [
         "unity",
@@ -120,7 +130,8 @@
       "course": "Pós-graduação em Arquitetura e Desenvolvimento de Sistemas com Ênfase em Padrões de Projeto",
       "period": "05/2024 - 05/2025",
       "details": [
-        "Ênfase em padrões de projeto, metodologias ágeis e desenvolvimento web frontend (React - HTML, CSS, JavaScript) e backend Java."
+        "Formação voltada ao desenvolvimento de aplicações web modernas, com foco em Padrões de Projeto, Arquitetura de Software e Metodologias Ágeis.",
+        "Abordagem prática em desenvolvimento Front-end (React, HTML, CSS, JavaScript, TypeScript) e Back-end em Java, reforçando a atuação Full-stack."
       ],
       "icons": [
         "react",
@@ -138,7 +149,8 @@
       "course": "Graduação em Jogos Digitais",
       "period": "01/2019 - 06/2021",
       "details": [
-        "Liderança de equipe de programação, desenvolvimento em Unity e game design."
+        "Formação com foco em programação, design e produção de jogos digitais, com ênfase em Unity e C#.",
+        "Atuação como líder de equipe de programação e responsável pelo desenvolvimento e integração de sistemas de jogo e interfaces."
       ],
       "icons": [
         "unity",
@@ -152,15 +164,18 @@
   "languages": [
     {
       "name": "Português",
-      "level": "Nativo"
+      "level": "Nativo",
+      "level_number": 6
     },
     {
       "name": "Espanhol",
-      "level": "Avançado (C1)"
+      "level": "Avançado (C1)",
+      "level_number": 5
     },
     {
       "name": "Inglês",
-      "level": "Intermediário (B2)"
+      "level": "Intermediário (B2)",
+      "level_number": 4
     }
   ],
   "courses": [

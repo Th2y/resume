@@ -1,0 +1,35 @@
+.level-blocks .block {
+  transition: background-color 0.3s ease;
+}
+
+.bg-primary {
+  background-color: var(--mat-sys-primary);
+}
+
+.bg-surface-container-highest {
+  background-color: var(--mat-sys-surface-container-highest);
+}
+
+.language-grid {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 0.75rem;
+}
+
+.language-row {
+  display: grid;
+  grid-template-columns: 12rem repeat(6, 1rem);
+  align-items: center;
+  gap: 0.25rem;
+
+  .language-name {
+    font-weight: 600;
+  }
+
+  .dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+}
