@@ -29,18 +29,18 @@
 
   <mat-sidenav-content class="background">
     <mat-toolbar class="primary-container" [ngStyle]="{
-        left: (isHandset$ | async) ? '0' : '230px',
-        width: (isHandset$ | async) ? '100%' : 'calc(100% - ' + '230px' + ')'
-      }">
+    left: (isHandset$ | async) ? '0' : '230px',
+    width: (isHandset$ | async) ? '100%' : 'calc(100% - 230px)'
+  }">
       @if (isHandset$ | async) {
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       }
 
-      <span class="flex-1 flex justify-center items-center gap-2">
-        <img src="/assets/TIcon.png" alt="Ícone pessoal" />
-        @if(myName){
+      <span class="flex-1 flex justify-center items-center gap-1">
+        <img class="mobile-hide" src="/assets/TIcon.png" alt="Ícone pessoal" />
+        @if (myName) {
         <h1 class="my-name">{{ myName }}</h1>
         }
         <button mat-icon-button (click)="downloadCV()">
@@ -48,11 +48,26 @@
         </button>
       </span>
 
-      <button mat-icon-button (click)="changeTheme()">
+      <button mat-icon-button (click)="changeMode()">
         <mat-icon>
-          {{ themeService.currentTheme === 'dark' ? 'light_mode' : 'dark_mode' }}
+          {{ themeService.currentTheme.mode === 'dark' ? 'light_mode' : 'dark_mode' }}
         </mat-icon>
       </button>
+
+      <button mat-icon-button [matMenuTriggerFor]="colorMenu">
+        <mat-icon>palette</mat-icon>
+      </button>
+
+      <mat-menu #colorMenu="matMenu" class="color-menu">
+        <div class="flex gap-2 p-2">
+          @for(color of themeColors; track color){
+          <button mat-icon-button (click)="changeColor(color)" [ngStyle]="{
+          'background-color': getColorPreview(color),
+          'border': themeService.currentTheme.color === color ? '2px solid var(--mat-sys-outline)' : 'none'
+        }" class="w-8 h-8 rounded-full transition-all hover:scale-110"></button>
+          }
+        </div>
+      </mat-menu>
     </mat-toolbar>
 
     <div style="margin-top: 64px;">

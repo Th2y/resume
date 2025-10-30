@@ -1,32 +1,63 @@
 @use '@angular/material' as mat;
-@use '../src/app/styles/theme-colors.scss' as theme;
+
+@use '../src/app/styles/theme-colors-blue.scss' as theme-blue;
+@use '../src/app/styles/theme-colors-green.scss' as theme-green;
+@use '../src/app/styles/theme-colors-orange.scss' as theme-orange;
+@use '../src/app/styles/theme-colors-pink.scss' as theme-pink;
+@use '../src/app/styles/theme-colors-purple.scss' as theme-purple;
 
 @import "tailwindcss";
 
 @include mat.core();
 
-// Tema claro
-$light-theme: mat.define-theme((color: (theme-type: light,
-        primary: theme.$primary-palette,
-        tertiary: theme.$tertiary-palette,
-      ),
+$theme-blue-light: mat.define-theme((color: (theme-type: light,
+        primary: theme-blue.$primary-palette,
+        tertiary: theme-blue.$tertiary-palette ),
+    ));
+$theme-blue-dark: mat.define-theme((color: (theme-type: dark,
+        primary: theme-blue.$primary-palette,
+        tertiary: theme-blue.$tertiary-palette ),
     ));
 
-// Tema escuro
-$dark-theme: mat.define-theme((color: (theme-type: dark,
-        primary: theme.$primary-palette,
-        tertiary: theme.$tertiary-palette,
-      ),
+$theme-green-light: mat.define-theme((color: (theme-type: light,
+        primary: theme-green.$primary-palette,
+        tertiary: theme-green.$tertiary-palette ),
+    ));
+$theme-green-dark: mat.define-theme((color: (theme-type: dark,
+        primary: theme-green.$primary-palette,
+        tertiary: theme-green.$tertiary-palette ),
+    ));
+
+$theme-orange-dark: mat.define-theme((color: (theme-type: dark,
+        primary: theme-orange.$primary-palette,
+        tertiary: theme-orange.$tertiary-palette ),
+    ));
+$theme-orange-light: mat.define-theme((color: (theme-type: light,
+        primary: theme-orange.$primary-palette,
+        tertiary: theme-orange.$tertiary-palette ),
+    ));
+
+$theme-pink-light: mat.define-theme((color: (theme-type: light,
+        primary: theme-pink.$primary-palette,
+        tertiary: theme-pink.$tertiary-palette ),
+    ));
+$theme-pink-dark: mat.define-theme((color: (theme-type: dark,
+        primary: theme-pink.$primary-palette,
+        tertiary: theme-pink.$tertiary-palette ),
+    ));
+
+$theme-purple-light: mat.define-theme((color: (theme-type: light,
+        primary: theme-purple.$primary-palette,
+        tertiary: theme-purple.$tertiary-palette ),
+    ));
+$theme-purple-dark: mat.define-theme((color: (theme-type: dark,
+        primary: theme-purple.$primary-palette,
+        tertiary: theme-purple.$tertiary-palette ),
     ));
 
 html {
   &.dark {
     color-scheme: dark;
-    @include mat.all-component-colors($dark-theme);
-    @include mat.all-component-themes($dark-theme);
-    @include mat.all-component-densities($dark-theme);
-    @include mat.system-level-colors($dark-theme);
-    @include mat.system-level-typography($dark-theme);
 
     h3,
     h4,
@@ -38,11 +69,6 @@ html {
 
   &.light {
     color-scheme: light;
-    @include mat.all-component-colors($light-theme);
-    @include mat.all-component-themes($light-theme);
-    @include mat.all-component-densities($light-theme);
-    @include mat.system-level-colors($light-theme);
-    @include mat.system-level-typography($light-theme);
 
     h3,
     h4,
@@ -50,6 +76,86 @@ html {
     h6 {
       color: var(--mat-sys-on-primary-container);
     }
+  }
+
+  &.theme-blue.dark {
+    @include mat.all-component-colors($theme-blue-dark);
+    @include mat.all-component-themes($theme-blue-dark);
+    @include mat.all-component-densities($theme-blue-dark);
+    @include mat.system-level-colors($theme-blue-dark);
+    @include mat.system-level-typography($theme-blue-dark);
+  }
+
+  &.theme-green.dark {
+    @include mat.all-component-colors($theme-green-dark);
+    @include mat.all-component-themes($theme-green-dark);
+    @include mat.all-component-densities($theme-green-dark);
+    @include mat.system-level-colors($theme-green-dark);
+    @include mat.system-level-typography($theme-green-dark);
+  }
+
+  &.theme-orange.dark {
+    @include mat.all-component-colors($theme-orange-dark);
+    @include mat.all-component-themes($theme-orange-dark);
+    @include mat.all-component-densities($theme-orange-dark);
+    @include mat.system-level-colors($theme-orange-dark);
+    @include mat.system-level-typography($theme-orange-dark);
+  }
+
+  &.theme-pink.dark {
+    @include mat.all-component-colors($theme-pink-dark);
+    @include mat.all-component-themes($theme-pink-dark);
+    @include mat.all-component-densities($theme-pink-dark);
+    @include mat.system-level-colors($theme-pink-dark);
+    @include mat.system-level-typography($theme-pink-dark);
+  }
+
+  &.theme-purple.dark {
+    @include mat.all-component-colors($theme-purple-dark);
+    @include mat.all-component-themes($theme-purple-dark);
+    @include mat.all-component-densities($theme-purple-dark);
+    @include mat.system-level-colors($theme-purple-dark);
+    @include mat.system-level-typography($theme-purple-dark);
+  }
+
+  &.theme-blue.light {
+    @include mat.all-component-colors($theme-blue-light);
+    @include mat.all-component-themes($theme-blue-light);
+    @include mat.all-component-densities($theme-blue-light);
+    @include mat.system-level-colors($theme-blue-light);
+    @include mat.system-level-typography($theme-blue-light);
+  }
+
+  &.theme-green.light {
+    @include mat.all-component-colors($theme-green-light);
+    @include mat.all-component-themes($theme-green-light);
+    @include mat.all-component-densities($theme-green-light);
+    @include mat.system-level-colors($theme-green-light);
+    @include mat.system-level-typography($theme-green-light);
+  }
+
+  &.theme-orange.light {
+    @include mat.all-component-colors($theme-orange-light);
+    @include mat.all-component-themes($theme-orange-light);
+    @include mat.all-component-densities($theme-orange-light);
+    @include mat.system-level-colors($theme-orange-light);
+    @include mat.system-level-typography($theme-orange-light);
+  }
+
+  &.theme-pink.light {
+    @include mat.all-component-colors($theme-pink-light);
+    @include mat.all-component-themes($theme-pink-light);
+    @include mat.all-component-densities($theme-pink-light);
+    @include mat.system-level-colors($theme-pink-light);
+    @include mat.system-level-typography($theme-pink-light);
+  }
+
+  &.theme-purple.light {
+    @include mat.all-component-colors($theme-purple-light);
+    @include mat.all-component-themes($theme-purple-light);
+    @include mat.all-component-densities($theme-purple-light);
+    @include mat.system-level-colors($theme-purple-light);
+    @include mat.system-level-typography($theme-purple-light);
   }
 }
 

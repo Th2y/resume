@@ -1,43 +1,64 @@
-import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
-export type Theme = 'light' | 'dark';
+type ThemeMode = 'light' | 'dark';
+type ThemeColor = 'blue' | 'pink' | 'green' | 'orange' | 'purple';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable({ providedIn: 'root' })
 export class ThemeService {
-  private readonly themeKey = 'app-theme';
-  private theme: Theme = 'light';
+  private readonly THEME_KEY = 'app-theme';
+  private readonly COLOR_KEY = 'app-color';
+  private mode: ThemeMode = 'light';
+  private color: ThemeColor = 'blue';
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     if (isPlatformBrowser(this.platformId)) {
-      const savedTheme = localStorage.getItem(this.themeKey) as Theme | null;
-      const systemPrefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches;
-      this.theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-      this.applyTheme(this.theme);
+      this.initializeTheme();
     }
   }
 
-  private applyTheme(theme: Theme) {
-    if (!isPlatformBrowser(this.platformId)) return;
+  private initializeTheme() {
+    const savedMode = localStorage.getItem(this.THEME_KEY) as ThemeMode | null;
+    const savedColor = localStorage.getItem(
+      this.COLOR_KEY
+    ) as ThemeColor | null;
 
-    document.documentElement.classList.remove('light', 'dark');
-    document.documentElement.classList.add(theme);
-    localStorage.setItem(this.themeKey, theme);
+    const systemPrefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+    this.mode = savedMode || (systemPrefersDark ? 'dark' : 'light');
+    this.color = savedColor || 'blue';
+
+    this.applyTheme(this.color, this.mode);
   }
 
-  toggleTheme() {
+  private applyTheme(color: ThemeColor, mode: ThemeMode) {
     if (!isPlatformBrowser(this.platformId)) return;
 
-    this.theme = this.theme === 'dark' ? 'light' : 'dark';
-    this.applyTheme(this.theme);
+    const html = document.documentElement;
+    html.className = '';
+    html.classList.add(`theme-${color}`);
+    html.classList.add(mode);
+
+    localStorage.setItem(this.THEME_KEY, mode);
+    localStorage.setItem(this.COLOR_KEY, color);
   }
 
-  get currentTheme(): Theme {
-    if (!isPlatformBrowser(this.platformId)) return 'light';
-    return this.theme;
+  toggleMode() {
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    this.mode = this.mode === 'dark' ? 'light' : 'dark';
+    this.applyTheme(this.color, this.mode);
+  }
+
+  setColor(color: ThemeColor) {
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    this.color = color;
+    this.applyTheme(this.color, this.mode);
+  }
+
+  get currentTheme() {
+    return { color: this.color, mode: this.mode };
   }
 }
