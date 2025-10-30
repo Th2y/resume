@@ -3,7 +3,7 @@
   <ul class="language-grid gap-y-3">
     @for (lang of languages; track lang.name) {
     <li class="language-row">
-      <span class="language-name">{{ lang.name }} — {{ lang.level }}</span>
+      <p class="language-name">{{ lang.name }} — {{ lang.level }}</p>
       @for(i of [1,2,3,4,5,6]; track i) {
       <span class="dot" [ngClass]="i <= lang.level_number ? getColorTone(i) : 'bg-surface-container-highest'">
       </span>
