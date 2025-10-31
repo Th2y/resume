@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+import { inject } from "@vercel/analytics"
+
 import { IconsService } from './services/shared/icons.service';
 
 @Component({
@@ -12,6 +15,8 @@ export class App {
   constructor(private iconsService: IconsService) {}
 
   ngOnInit(): void {
+    inject();
+
     this.iconsService.registerAll();
   }
 }
