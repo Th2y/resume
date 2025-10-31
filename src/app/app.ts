@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { inject } from "@vercel/analytics"
+import { inject } from '@vercel/analytics';
 
 import { IconsService } from './services/shared/icons.service';
 
@@ -15,7 +15,13 @@ export class App {
   constructor(private iconsService: IconsService) {}
 
   ngOnInit(): void {
-    inject();
+    const isLocalHost =
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1';
+
+    if (!isLocalHost) {
+      inject();
+    }
 
     this.iconsService.registerAll();
   }
