@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 import { Resume } from '../../interfaces/resume';
-import { ResumeService } from '../../services/http/resume.service';
+import { ResumeService } from '../../services/shared/resume.service';
 import { PersonalInfoComponent } from '../resume-parts/personal-info/personal-info.component';
 import { SummaryComponent } from '../resume-parts/summary/summary.component';
 import { WorkExperienceComponent } from '../resume-parts/work-experience/work-experience.component';
