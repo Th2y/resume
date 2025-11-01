@@ -27,8 +27,8 @@ export class App {
       if (!isLocalHost) {
         inject();
       }
-    }
 
-    this.iconsService.registerAll();
+      this.iconsService.registerAll();
+    }
   }
 }

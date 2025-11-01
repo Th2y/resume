@@ -1,7 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { isPlatformBrowser } from '@angular/common';
+
 import { SKILL_ICONS } from '../../records/skill-icons';
+
 
 @Injectable({
   providedIn: 'root',
@@ -9,17 +12,24 @@ import { SKILL_ICONS } from '../../records/skill-icons';
 export class IconsService {
   constructor(
     private iconRegistry: MatIconRegistry,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   registerAll(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.iconRegistry.addSvgIcon(
       'whatsapp',
-      this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons-svg/whatsapp.svg')
+      this.sanitizer.bypassSecurityTrustResourceUrl(
+        'assets/icons-svg/whatsapp.svg'
+      )
     );
     this.iconRegistry.addSvgIcon(
       'linkedin',
-      this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons-svg/linkedin.svg')
+      this.sanitizer.bypassSecurityTrustResourceUrl(
+        'assets/icons-svg/linkedin.svg'
+      )
     );
 
     for (const icon of Object.keys(SKILL_ICONS)) {
