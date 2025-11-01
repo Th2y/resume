@@ -19,7 +19,7 @@
       <a mat-list-item (click)="scrollTo('activities')">Atividades Extras</a>
 
       <div class="p-4 flex justify-center">
-        <button mat-stroked-button color="primary" class="flex items-center gap-2">
+        <button mat-stroked-button color="primary" class="flex items-center gap-2" name="download">
           <mat-icon>download</mat-icon>
           Baixar Currículo
         </button>
@@ -33,7 +33,7 @@
     width: (isHandset$ | async) ? '100%' : 'calc(100% - 230px)'
   }">
       @if (isHandset$ | async) {
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" name="menu">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       }
@@ -43,18 +43,18 @@
         @if (myName) {
         <h1 class="my-name">{{ myName }}</h1>
         }
-        <button mat-icon-button (click)="downloadCV()">
+        <button mat-icon-button (click)="downloadCV()" name="download">
           <mat-icon>download</mat-icon>
         </button>
       </span>
 
-      <button mat-icon-button (click)="changeMode()">
+      <button mat-icon-button (click)="changeMode()" name="change light and dark mode">
         <mat-icon>
           {{ themeService.currentTheme.mode === 'dark' ? 'light_mode' : 'dark_mode' }}
         </mat-icon>
       </button>
 
-      <button mat-icon-button [matMenuTriggerFor]="colorMenu">
+      <button mat-icon-button [matMenuTriggerFor]="colorMenu" name="change theme color">
         <mat-icon>palette</mat-icon>
       </button>
 
@@ -64,7 +64,7 @@
           <button mat-icon-button (click)="changeColor(color)" [ngStyle]="{
           'background-color': getColorPreview(color),
           'border': themeService.currentTheme.color === color ? '2px solid var(--mat-sys-outline)' : 'none'
-        }" class="w-8 h-8 rounded-full transition-all hover:scale-110"></button>
+        }" class="w-8 h-8 rounded-full transition-all hover:scale-110" name='{{ color }}'></button>
           }
         </div>
       </mat-menu>

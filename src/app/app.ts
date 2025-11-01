@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { inject } from '@vercel/analytics';
 
 import { IconsService } from './services/shared/icons.service';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -12,15 +13,20 @@ import { IconsService } from './services/shared/icons.service';
   styleUrl: './app.scss',
 })
 export class App {
-  constructor(private iconsService: IconsService) {}
+  constructor(
+    private iconsService: IconsService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngOnInit(): void {
-    const isLocalHost =
-      window.location.hostname === 'localhost' ||
-      window.location.hostname === '127.0.0.1';
+    if (isPlatformBrowser(this.platformId)) {
+      const isLocalHost =
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1';
 
-    if (!isLocalHost) {
-      inject();
+      if (!isLocalHost) {
+        inject();
+      }
     }
 
     this.iconsService.registerAll();
